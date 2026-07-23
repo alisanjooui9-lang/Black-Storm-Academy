@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>پروفایل | Ghost Academy</title>
+
+<style>
+
+body{
+background:#050505;
+color:white;
+font-family:tahoma;
+padding:20px;
+transition:.4s;
+}
+
+
+.light{
+background:#eee;
+color:#111;
+}
+
+
+.box{
+
+background:#151515;
+padding:25px;
+border-radius:20px;
+text-align:center;
+border:1px solid #333;
+
+}
+
+
+.light .box{
+
+background:white;
+
+}
+
+
+h1,h2{
+
+color:#00ff99;
+
+}
+
+
+input{
+
+padding:12px;
+border-radius:10px;
+border:none;
+
+}
+
+
+button{
+
+background:#00ff99;
+border:none;
+padding:12px 25px;
+border-radius:12px;
+font-weight:bold;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<button onclick="theme()">
+🌙 تغییر حالت
+</button>
+
+
+<div class="box">
+
+
+<h1>👤 پروفایل بازیکن</h1>
+
+
+<h2 id="name">
+بازیکن ناشناس
+</h2>
+
+
+<input id="username" placeholder="نام بازیکن">
+
+
+<br><br>
+
+
+<button onclick="save()">
+ذخیره
+</button>
+
+
+<hr>
+
+
+<p>🏆 سطح: حرفه‌ای</p>
+
+<p>🔥 XP: 0</p>
+
+<p>🎮 رتبه: بازیکن جدید</p>
+
+
+<br>
+
+
+<a href="index.html">
+
+<button>
+⬅ برگشت
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+<script>
+
+
+function save(){
+
+let user=document.getElementById("username").value;
+
+document.getElementById("name").innerHTML=user;
+
+localStorage.setItem("username",user);
+
+}
+
+
+
+let old=localStorage.getItem("username");
+
+if(old){
+
+document.getElementById("name").innerHTML=old;
+
+}
+
+
+
+function theme(){
+
+document.body.classList.toggle("light");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
