@@ -2,399 +2,6 @@
 <html lang="fa" dir="rtl">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ghost Academy</title>
-
-<style>
-
-body{
-margin:0;
-background:#050505;
-color:white;
-font-family:tahoma;
-}
-
-header{
-background:#111;
-padding:35px;
-text-align:center;
-border-bottom:3px solid #00ff99;
-box-shadow:0 0 25px #00ff99;
-}
-
-.logo{
-font-size:45px;
-color:#00ff99;
-text-shadow:0 0 20px #00ff99;
-}
-
-nav{
-background:#151515;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-}
-
-nav a:hover{
-color:#00ff99;
-}
-
-
-.search{
-text-align:center;
-margin:25px;
-}
-
-input{
-width:80%;
-padding:15px;
-border-radius:15px;
-border:none;
-background:#222;
-color:white;
-}
-
-
-.card{
-
-background:#151515;
-
-margin:20px;
-
-padding:25px;
-
-border-radius:20px;
-
-border:1px solid #333;
-
-transition:.3s;
-
-animation:show .7s;
-
-}
-
-
-.card:hover{
-
-transform:scale(1.03);
-
-box-shadow:0 0 25px #00ff99;
-
-}
-
-
-
-@keyframes show{
-
-from{
-opacity:0;
-transform:translateY(40px);
-}
-
-to{
-opacity:1;
-}
-
-}
-
-
-
-h2{
-color:#00ff99;
-}
-
-
-p{
-line-height:2;
-color:#ddd;
-}
-
-
-
-button{
-
-background:#00ff99;
-
-border:none;
-
-padding:13px 25px;
-
-border-radius:12px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-}
-
-
-
-button:hover{
-
-background:white;
-
-}
-
-
-
-a{
-text-decoration:none;
-}
-
-
-
-footer{
-
-text-align:center;
-
-padding:25px;
-
-color:#777;
-
-}
-
-
-</style>
-
-</head>
-
-
-<body>
-
-
-
-<header>
-
-<div class="logo">
-👻 GHOST ACADEMY
-</div>
-
-<p>
-آموزش حرفه‌ای کالاف دیوتی موبایل 🎮
-</p>
-
-</header>
-
-
-
-
-<nav>
-
-<a href="index.html">خانه</a>
-
-<a href="news.html">اخبار</a>
-
-<a href="about.html">درباره ما</a>
-
-</nav>
-
-
-
-
-
-<div class="search">
-
-<input id="search" placeholder="جستجوی آموزش..." onkeyup="search()">
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h2>🎯 آموزش سنسیویتی</h2>
-
-<p>
-تنظیم سنسیویتی برای کنترل بهتر بازی.
-</p>
-
-<a href="sensitivity.html">
-
-<button>
-مشاهده آموزش
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>🔫 آموزش اسنایپر</h2>
-
-<p>
-تکنیک‌های نشانه‌گیری حرفه‌ای.
-</p>
-
-<a href="sniper.html">
-
-<button>
-مشاهده آموزش
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>🏆 آموزش بتل رویال</h2>
-
-<p>
-تاکتیک‌های زنده ماندن و پیروزی.
-</p>
-
-<a href="battle.html">
-
-<button>
-مشاهده آموزش
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>🎯 آموزش هدشات</h2>
-
-<p>
-افزایش دقت تیراندازی.
-</p>
-
-<a href="headshot.html">
-
-<button>
-مشاهده آموزش
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>🎮 آموزش مولتی پلیر</h2>
-
-<p>
-ترفندهای بازی سریع.
-</p>
-
-<a href="multiplayer.html">
-
-<button>
-مشاهده آموزش
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h2>📰 اخبار کالاف</h2>
-
-<p>
-آخرین خبرها و آپدیت‌های بازی.
-</p>
-
-<a href="news.html">
-
-<button>
-مشاهده اخبار
-</button>
-
-</a>
-
-</div>
-
-
-
-
-
-<footer>
-
-Ghost Academy © 2026
-
-</footer>
-
-
-
-
-<script>
-
-function search(){
-
-let value=document.getElementById("search").value.toLowerCase();
-
-let cards=document.getElementsByClassName("card");
-
-
-for(let i=0;i<cards.length;i++){
-
-let text=cards[i].innerText.toLowerCase();
-
-
-if(text.includes(value)){
-
-cards[i].style.display="block";
-
-}else{
-
-cards[i].style.display="none";
-
-}
-
-}
-
-}
-
-</script>
-
-
-
-</body>
-
-</html><!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -416,176 +23,110 @@ transition:.4s;
 
 
 .light{
-background:#eeeeee;
+background:#eee;
 color:#111;
 }
 
 
 header{
-
-background:#111;
 padding:35px;
 text-align:center;
+background:#111;
 border-bottom:3px solid #00ff99;
-box-shadow:0 0 25px #00ff99;
-
+box-shadow:0 0 20px #00ff99;
 }
 
 
 .logo{
-
-font-size:45px;
+font-size:40px;
 color:#00ff99;
-text-shadow:0 0 20px #00ff99;
-
+font-weight:bold;
 }
 
 
-
 nav{
-
 background:#151515;
 padding:15px;
 text-align:center;
-
 }
 
 
 nav a{
-
 color:white;
 text-decoration:none;
-margin:12px;
-
+margin:10px;
 }
 
 
-.light nav a{
-color:#111;
+.card{
+background:#151515;
+margin:20px;
+padding:20px;
+border-radius:20px;
+border:1px solid #333;
+transition:.3s;
 }
 
+
+.light .card{
+background:white;
+}
+
+
+.card:hover{
+transform:scale(1.03);
+box-shadow:0 0 20px #00ff99;
+}
+
+
+h2{
+color:#00ff99;
+}
 
 
 button{
-
 background:#00ff99;
-border:none;
-padding:12px 22px;
-border-radius:15px;
+border:0;
+padding:12px 20px;
+border-radius:12px;
 font-weight:bold;
 cursor:pointer;
-
-}
-
-
-#theme{
-
-position:fixed;
-bottom:20px;
-left:20px;
-
-}
-
-
-
-.search{
-
-text-align:center;
-margin:25px;
-
 }
 
 
 input{
-
 width:80%;
 padding:15px;
 border-radius:15px;
 border:0;
 background:#222;
 color:white;
-
 }
 
 
-
-.card{
-
-background:#151515;
+.search{
+text-align:center;
 margin:20px;
-padding:25px;
-border-radius:20px;
-border:1px solid #333;
-transition:.3s;
-animation:show .7s;
-
 }
 
 
-.light .card{
-
-background:white;
-
+#theme{
+position:fixed;
+bottom:20px;
+left:20px;
 }
-
-
-
-.card:hover{
-
-transform:scale(1.03);
-box-shadow:0 0 25px #00ff99;
-
-}
-
-
-
-@keyframes show{
-
-from{
-
-opacity:0;
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-}
-
-}
-
-
-
-h2{
-
-color:#00ff99;
-
-}
-
-
-p{
-
-line-height:2;
-
-}
-
 
 
 footer{
-
 text-align:center;
-padding:25px;
+padding:20px;
 color:#777;
-
 }
 
 
 </style>
 
 </head>
-
 
 
 <body>
@@ -598,7 +139,7 @@ color:#777;
 </div>
 
 <p>
-آموزش حرفه‌ای کالاف دیوتی موبایل 🎮
+آکادمی حرفه‌ای کالاف دیوتی موبایل 🎮
 </p>
 
 </header>
@@ -619,7 +160,7 @@ color:#777;
 
 
 
-<button id="theme" onclick="changeTheme()">
+<button id="theme" onclick="theme()">
 🌙 / ☀️
 </button>
 
@@ -627,10 +168,9 @@ color:#777;
 
 <div class="search">
 
-<input id="search" placeholder="جستجوی آموزش..." onkeyup="searchBox()">
+<input id="search" placeholder="جستجو..." onkeyup="searchBox()">
 
 </div>
-
 
 
 
@@ -638,7 +178,7 @@ color:#777;
 
 <h2>🎯 آموزش سنسیویتی</h2>
 
-<p>تنظیمات حرفه‌ای کنترل بازی</p>
+<p>تنظیم سنسیویتی برای کنترل بهتر بازی</p>
 
 <a href="sensitivity.html">
 <button>مشاهده آموزش</button>
@@ -650,126 +190,4 @@ color:#777;
 
 <div class="card">
 
-<h2>🔫 آموزش اسنایپر</h2>
-
-<p>تکنیک تیراندازی دقیق</p>
-
-<a href="sniper.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>🏆 آموزش بتل رویال</h2>
-
-<p>تاکتیک‌های زنده ماندن</p>
-
-<a href="battle.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>🎯 آموزش هدشات</h2>
-
-<p>افزایش دقت تیراندازی</p>
-
-<a href="headshot.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>🎮 آموزش مولتی پلیر</h2>
-
-<p>ترفندهای بازی حرفه‌ای</p>
-
-<a href="multiplayer.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-
-<div class="card">
-
-<h2>📰 اخبار کالاف</h2>
-
-<p>آخرین خبرهای بازی</p>
-
-<a href="news.html">
-<button>مشاهده اخبار</button>
-</a>
-
-</div>
-
-
-
-<footer>
-
-Ghost Academy © 2026
-
-</footer>
-
-
-
-<script>
-
-
-function changeTheme(){
-
-document.body.classList.toggle("light");
-
-}
-
-
-
-function searchBox(){
-
-let value=document.getElementById("search").value.toLowerCase();
-
-let cards=document.getElementsByClassName("card");
-
-
-for(let i=0;i<cards.length;i++){
-
-let text=cards[i].innerText.toLowerCase();
-
-
-if(text.includes(value)){
-
-cards[i].style.display="block";
-
-}
-
-else{
-
-cards[i].style.display="none";
-
-}
-
-}
-
-}
-
-
-</script>
-
-
-
-</body>
-
-</html>
+<h2>
