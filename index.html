@@ -10,10 +10,6 @@
 
 <style>
 
-*{
-box-sizing:border-box;
-}
-
 body{
 margin:0;
 background:#050505;
@@ -21,121 +17,50 @@ color:white;
 font-family:tahoma;
 }
 
-
-/* هدر */
-
 header{
-
-background:#0d0d0d;
-
+background:#111;
 padding:35px;
-
 text-align:center;
-
 border-bottom:3px solid #00ff99;
-
 box-shadow:0 0 25px #00ff99;
-
 }
-
 
 .logo{
-
 font-size:45px;
-
 color:#00ff99;
-
 text-shadow:0 0 20px #00ff99;
-
 }
-
-
-header p{
-
-color:#ccc;
-
-}
-
-
-
-/* منو */
 
 nav{
-
-background:#111;
-
+background:#151515;
 padding:15px;
-
 text-align:center;
-
 }
-
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
 margin:15px;
-
 }
-
-
 
 nav a:hover{
-
 color:#00ff99;
-
 }
 
-
-
-/* جستجو */
 
 .search{
-
 text-align:center;
-
 margin:25px;
-
 }
-
 
 input{
-
 width:80%;
-
 padding:15px;
-
 border-radius:15px;
-
 border:none;
-
 background:#222;
-
 color:white;
-
 }
-
-
-
-/* شمارنده */
-
-.counter{
-
-text-align:center;
-
-color:#00ff99;
-
-font-size:20px;
-
-}
-
-
-
-
-/* کارت ها */
 
 
 .card{
@@ -150,21 +75,18 @@ border-radius:20px;
 
 border:1px solid #333;
 
-animation:show 0.7s;
+transition:.3s;
 
-transition:0.3s;
+animation:show .7s;
 
 }
 
 
-
 .card:hover{
 
-transform:scale(1.04);
+transform:scale(1.03);
 
 box-shadow:0 0 25px #00ff99;
-
-border-color:#00ff99;
 
 }
 
@@ -173,19 +95,12 @@ border-color:#00ff99;
 @keyframes show{
 
 from{
-
 opacity:0;
-
 transform:translateY(40px);
-
 }
 
 to{
-
 opacity:1;
-
-transform:translateY(0);
-
 }
 
 }
@@ -193,31 +108,20 @@ transform:translateY(0);
 
 
 h2{
-
 color:#00ff99;
-
 }
-
 
 
 p{
-
 line-height:2;
-
 color:#ddd;
-
 }
 
-
-
-/* دکمه */
 
 
 button{
 
 background:#00ff99;
-
-color:black;
 
 border:none;
 
@@ -242,14 +146,9 @@ background:white;
 
 
 a{
-
 text-decoration:none;
-
 }
 
-
-
-/* فوتر */
 
 
 footer{
@@ -265,31 +164,25 @@ color:#777;
 
 </style>
 
-
 </head>
 
 
 <body>
 
 
+
 <header>
 
-
 <div class="logo">
-
 👻 GHOST ACADEMY
-
 </div>
 
-
 <p>
-
-Professional Call of Duty Mobile Training 🎮
-
+آموزش حرفه‌ای کالاف دیوتی موبایل 🎮
 </p>
 
-
 </header>
+
 
 
 
@@ -297,23 +190,19 @@ Professional Call of Duty Mobile Training 🎮
 
 <a href="index.html">خانه</a>
 
+<a href="news.html">اخبار</a>
+
 <a href="about.html">درباره ما</a>
 
 </nav>
 
 
 
+
+
 <div class="search">
 
-<input id="search" placeholder="جستجوی آموزش..." onkeyup="searchBox()">
-
-</div>
-
-
-
-<div class="counter">
-
-🔥 تعداد آموزش‌ها: ۶
+<input id="search" placeholder="جستجوی آموزش..." onkeyup="search()">
 
 </div>
 
@@ -331,11 +220,14 @@ Professional Call of Duty Mobile Training 🎮
 
 <a href="sensitivity.html">
 
-<button>مشاهده آموزش</button>
+<button>
+مشاهده آموزش
+</button>
 
 </a>
 
 </div>
+
 
 
 
@@ -351,11 +243,14 @@ Professional Call of Duty Mobile Training 🎮
 
 <a href="sniper.html">
 
-<button>مشاهده آموزش</button>
+<button>
+مشاهده آموزش
+</button>
 
 </a>
 
 </div>
+
 
 
 
@@ -371,31 +266,14 @@ Professional Call of Duty Mobile Training 🎮
 
 <a href="battle.html">
 
-<button>مشاهده آموزش</button>
+<button>
+مشاهده آموزش
+</button>
 
 </a>
 
 </div>
 
-
-
-
-
-<div class="card">
-
-<h2>⚙️ تنظیمات حرفه‌ای</h2>
-
-<p>
-تنظیمات مناسب برای بازی بهتر.
-</p>
-
-<a href="settings.html">
-
-<button>مشاهده آموزش</button>
-
-</a>
-
-</div>
 
 
 
@@ -411,11 +289,14 @@ Professional Call of Duty Mobile Training 🎮
 
 <a href="headshot.html">
 
-<button>مشاهده آموزش</button>
+<button>
+مشاهده آموزش
+</button>
 
 </a>
 
 </div>
+
 
 
 
@@ -426,12 +307,37 @@ Professional Call of Duty Mobile Training 🎮
 <h2>🎮 آموزش مولتی پلیر</h2>
 
 <p>
-ترفندهای بازی سریع و حرفه‌ای.
+ترفندهای بازی سریع.
 </p>
 
 <a href="multiplayer.html">
 
-<button>مشاهده آموزش</button>
+<button>
+مشاهده آموزش
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>📰 اخبار کالاف</h2>
+
+<p>
+آخرین خبرها و آپدیت‌های بازی.
+</p>
+
+<a href="news.html">
+
+<button>
+مشاهده اخبار
+</button>
 
 </a>
 
@@ -449,12 +355,12 @@ Ghost Academy © 2026
 
 
 
+
 <script>
 
+function search(){
 
-function searchBox(){
-
-let input=document.getElementById("search").value.toLowerCase();
+let value=document.getElementById("search").value.toLowerCase();
 
 let cards=document.getElementsByClassName("card");
 
@@ -464,13 +370,11 @@ for(let i=0;i<cards.length;i++){
 let text=cards[i].innerText.toLowerCase();
 
 
-if(text.includes(input)){
+if(text.includes(value)){
 
 cards[i].style.display="block";
 
-}
-
-else{
+}else{
 
 cards[i].style.display="none";
 
@@ -479,7 +383,6 @@ cards[i].style.display="none";
 }
 
 }
-
 
 </script>
 
