@@ -1,112 +1,160 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Black Storm Academy</title>
 
 <style>
+
 body{
 margin:0;
-background:#080808;
+background:#050505;
 color:white;
 font-family:tahoma;
+background-image:linear-gradient(135deg,#050505,#111);
 }
+
+
+/* هدر */
 
 header{
-background:#111;
-padding:25px;
+background:#0b0b0b;
+padding:35px;
 text-align:center;
-border-bottom:2px solid #00ff99;
+border-bottom:3px solid #00ff99;
+box-shadow:0 0 20px #00ff99;
 }
 
-h1{
+
+header h1{
 color:#00ff99;
+font-size:40px;
+text-shadow:0 0 15px #00ff99;
 }
+
+
+header p{
+color:#ccc;
+font-size:18px;
+}
+
+
+/* کارت ها */
 
 .card{
-background:#151515;
-margin:20px;
-padding:20px;
-border-radius:15px;
+background:#111;
+margin:25px;
+padding:25px;
+border-radius:20px;
+border:1px solid #222;
+box-shadow:0 0 15px #000;
+transition:0.3s;
 }
 
-h2{
+
+.card:hover{
+transform:scale(1.03);
+border-color:#00ff99;
+box-shadow:0 0 25px #00ff99;
+}
+
+
+.card h2{
 color:#00ff99;
 }
 
-button{
-background:#00ff99;
-border:none;
-padding:12px 20px;
-border-radius:10px;
-font-weight:bold;
+
+.card p{
+line-height:2;
+color:#ddd;
 }
+
+
+/* دکمه */
+
+button{
+
+background:#00ff99;
+color:#000;
+
+border:none;
+
+padding:14px 25px;
+
+border-radius:12px;
+
+font-weight:bold;
+
+font-size:16px;
+
+cursor:pointer;
+
+box-shadow:0 0 15px #00ff99;
+
+transition:0.3s;
+
+}
+
+
+button:hover{
+
+background:white;
+
+box-shadow:0 0 25px white;
+
+}
+
+
+
+/* لینک */
 
 a{
 text-decoration:none;
 }
 
+
+/* فوتر */
+
 footer{
+
 text-align:center;
-padding:20px;
+
+padding:25px;
+
 color:#777;
+
 }
+
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
+
 <h1>BLACK STORM ACADEMY</h1>
+
 <p>آموزش حرفه‌ای کالاف دیوتی موبایل</p>
+
 </header>
 
 
+
+
 <div class="card">
+
 <h2>🎯 آموزش سنسیویتی</h2>
+
 <p>
-یادگیری تنظیم سنسیویتی برای کنترل بهتر، سرعت واکنش بیشتر و تیراندازی دقیق‌تر.
-</p>
-
-<a href="sensitivity.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-<div class="card">
-<h2>🔫 آموزش اسنایپر</h2>
-<p>
-یادگیری نشانه‌گیری، کنترل اسکوپ و شلیک حرفه‌ای با اسنایپر.
-</p>
-
-<a href="sniper.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-<div class="card">
-<h2>🏆 آموزش بتل رویال</h2>
-<p>
-یادگیری تاکتیک‌های زنده ماندن، لوت کردن و بازی تیمی.
-</p>
-
-<a href="battle.html">
-<button>مشاهده آموزش</button>
-</a>
-
-</div>
-
-
-<div class="card">
-<h2>⚙️ تنظیمات حرفه‌ای</h2>
-<p>
+یادگیری تنظیم سن<p>
 تنظیم کنترل‌ها، گرافیک و گزینه‌های مهم برای بازیکنان حرفه‌ای.
 </p>
 
